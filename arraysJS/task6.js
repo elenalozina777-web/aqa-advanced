@@ -1,7 +1,8 @@
 const numbersList = [1,10,14,2,4,5,43,34];
-const sorted = numbersList.toSorted ((a, b) => a - b);
+const copyArray = numbersList;
+const sorted = copyArray.toSorted ((a, b) => a - b);
 
-console.log (numbersList);
+console.log (copyArray);
 console.log (sorted);
 
 
