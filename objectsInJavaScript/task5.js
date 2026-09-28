@@ -1,16 +1,18 @@
     const users = [
-        { name: "Helga", age: 38, job: "doctor"},
-        { name: "Jack", age: 35, job: "engineer" },
-        { name: "Jane", age: 45, job: "teacher"},
-        { name: "Handy", age: 36, job: "electrician" }
+        { age: 38, email: "helga@mail.com"},
+        { name: "Jack", age: 35, email: "jack@mail.com" },
+        { name: "Jane", age: 45},
+        { name: "Handy", email: "handy@mail.com" }
 
     ];
     
-    for (const {name, age, job} of users)  {
+    for (const {name, age, email} of users)  {
+      const tempName = name ?? "Defolt name";
+      const tempAge = age ?? "Defolt age";
+      const tempEmail = email ?? "Defolt email";
 
-      console.log (name);
-      console.log (age);
-      console.log (job); 
+      console.log (tempName, tempAge,tempEmail);
+      
       
     }
 
