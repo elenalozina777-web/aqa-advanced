@@ -15,10 +15,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-   
+    "prettier:write": "npx prettier . --write",
+    "eslint:write": "npx eslint --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "chalk": "^6.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "husky": "^9.1.7",
+    "prettier": "3.9.9"
   }
- 
 }
