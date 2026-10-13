@@ -12,13 +12,14 @@
   },
   "license": "ISC",
   "author": "Olena Lozina",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-   
+    "test": "jest"
   },
   "dependencies": {
-    "chalk": "^6.0.0"
+    "axios": "^1.20.0",
+    "chalk": "^6.0.0",
+    "jest": "^30.5.2"
   }
- 
 }
